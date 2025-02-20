@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="490.0" prefWidth="600.0" styleClass="page-content" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.groupeisi.exam_diti4.controller.InscriptionController">
+
+    <!-- Conteneur vertical pour aligner les éléments au centre -->
+    <VBox alignment="CENTER" spacing="15">
+        <!-- Label "Login" -->
+        <Label text="Inscription" textFill="#FFFFFF">
+            <font>
+                <Font size="24" />
+            </font>
+        </Label>
+   
+                 <!-- Ligne verte sous le titre (utilisée comme séparateur) -->
+        <Pane prefHeight="3.0" prefWidth="100.0" style="-fx-background-color: #00FF00;" />
+        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="260.0" spacing="60.0">
+            <children>
+      
+              <Label prefWidth="90.0" styleClass="label-text" text="Nom:" textFill="WHITE" HBox.hgrow="ALWAYS" />
+              <TextField fx:id="nomField" prefWidth="340.0" promptText="Nom" style="-fx-prompt-text-fill: #888888; -fx-text-fill: #FFFFFF;                           -fx-background-color: #333333; -fx-background-radius: 5;                           -fx-border-color: transparent; -fx-border-radius: 5;                           -fx-focus-color: #00FF00;" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="260.0" spacing="60.0">
+         <children>
+            <Label prefWidth="90.0" styleClass="label-text" text="Prenom:" textFill="WHITE" HBox.hgrow="ALWAYS" />
+      
+                                <TextField fx:id="prenomField" prefWidth="340.0" promptText="Prenom" style="-fx-prompt-text-fill: #888888; -fx-text-fill: #FFFFFF;                           -fx-background-color: #333333; -fx-background-radius: 5;                           -fx-border-color: transparent; -fx-border-radius: 5;                           -fx-focus-color: #00FF00;" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="260.0" spacing="60.0">
+         <children>
+            <Label prefWidth="90.0" styleClass="label-text" text="Telepone:" textFill="WHITE" HBox.hgrow="ALWAYS" />
+      
+              <TextField fx:id="telephoneField" prefWidth="340.0" promptText="Telephone" style="-fx-prompt-text-fill: #888888; -fx-text-fill: #FFFFFF;                           -fx-background-color: #333333; -fx-background-radius: 5;                           -fx-border-color: transparent; -fx-border-radius: 5;                           -fx-focus-color: #00FF00;" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="260.0" spacing="60.0">
+         <children>
+            <Label prefWidth="90.0" styleClass="label-text" text="Email:" textFill="WHITE" HBox.hgrow="ALWAYS" />
+      
+              <TextField fx:id="emailField" prefWidth="340.0" promptText="Email" style="-fx-prompt-text-fill: #888888; -fx-text-fill: #FFFFFF;                           -fx-background-color: #333333; -fx-background-radius: 5;                           -fx-border-color: transparent; -fx-border-radius: 5;                           -fx-focus-color: #00FF00;" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="260.0" spacing="60.0">
+         <children>
+            <Label prefWidth="90.0" styleClass="label-text" text="Login:" textFill="WHITE" HBox.hgrow="ALWAYS" />
+      
+              <TextField fx:id="loginField" prefWidth="340.0" promptText="Login" style="-fx-prompt-text-fill: #888888; -fx-text-fill: #FFFFFF;                           -fx-background-color: #333333; -fx-background-radius: 5;                           -fx-border-color: transparent; -fx-border-radius: 5;                           -fx-focus-color: #00FF00;" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="260.0" spacing="60.0">
+         <children>
+            <Label prefWidth="90.0" styleClass="label-text" text="Password:" textFill="WHITE" HBox.hgrow="ALWAYS" />
+      
+              <PasswordField fx:id="passwordField" prefWidth="340.0" promptText="Password" style="-fx-prompt-text-fill: #888888; -fx-text-fill: #FFFFFF;                           -fx-background-color: #333333; -fx-background-radius: 5;                           -fx-border-color: transparent; -fx-border-radius: 5;                           -fx-focus-color: #00FF00;" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="260.0" spacing="50.0">
+         <children>
+            <Button fx:id="btnAnnuler" maxWidth="135.0" onAction="#handleAnnuler" prefHeight="30.0" prefWidth="135.0" styleClass="btn-danger" text="Annuler" textAlignment="CENTER" />
+            <Button fx:id="btnIncription" alignment="CENTER" maxWidth="150.0" onAction="#handleInscription" prefWidth="150.0" styleClass="btn-primary" text="S'inscrire" />
+         </children>
+      </HBox>
+
+    </VBox>
+
+    <!-- Marges internes pour éviter que tout soit collé aux bords -->
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+</StackPane>
